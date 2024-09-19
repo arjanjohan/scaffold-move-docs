@@ -1,0 +1,3 @@
+# 🙏 Contributing to Scaffold Move
+
+Coming soon...
