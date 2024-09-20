@@ -1,5 +1,6 @@
 ---
 hidden: true
+sidebar_class_name: hidden
 ---
 
 # useGetAccountModule(s)

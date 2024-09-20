@@ -1,18 +1,12 @@
----
-hidden: true
----
-
 # useGetModule
 
 ## useGetModule
 
-Use this hook to fetch the module by name.
+Use this hook to fetch a Move module, including the bytecode and ABI. The information if fetched from the `deployedModules.ts` and `externalModules.ts`.
 
 ```
 const moveModule = useGetModule("onchain_bio");
 ```
-
-
 
 ### **Parameters**
 
@@ -22,4 +16,4 @@ const moveModule = useGetModule("onchain_bio");
 
 ### **Return Value**
 
-* `moveModuleBytecode[]`: A list of `MoveModuleBytecode` objects.
+* `module`: A GenericModule object, containing the bytecode and ABI.

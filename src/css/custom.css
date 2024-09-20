@@ -32,3 +32,7 @@
   --aa-primary-color-rgb: 255, 208, 22 !important;
   --aa-muted-color-rgb: 255, 208, 22 !important;
 }
+
+.hidden {
+  display: none !important;
+  }
