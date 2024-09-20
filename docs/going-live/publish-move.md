@@ -5,7 +5,6 @@ sidebar_position: 1
 # Publish Your Move Modules
 
 When publishing a new Move module, you must first initialize an Aptos account and fund it with the native token. You can use this command:
-
 ```
 yarn account
 ```
@@ -18,10 +17,12 @@ To publish your Move modules to the newly generated Aptos account, use this comm
 yarn deploy
 ```
 
-This command publishes the Move modules, and afterwards updates the `deployedModules.ts` file in the NextJS directory.&#x20;
+This command publishes the Move modules and subsequently updates the `deployedModules.ts` file in the NextJS directory.
 
-If you want to use external Move modules in your frontend, you can add their addresses in your Move.toml file to automatically generate an externalModules.ts file. [See here for more details](../external-modules/external-modules.md).
+If you want to use external Move modules in your frontend, you can add their addresses in your Move.toml file. This will automatically generate an `externalModules.ts` file. For more details, [refer to the external modules documentation](../external-modules/external-modules.md).
 
 :::warning
-On Aptos devnet, the network is often wiped and the chainId can change. If this happens, redeploy the modules (this will always use the correct chainId) and manually update the chainId for devnet in `packages/nextjs/utils/scaffold-move/chains.ts`.
+The Aptos devnet is frequently reset, which can result in changes to the chainId. If this occurs, you should:
+1. Redeploy your modules (this process always uses the correct chainId)
+2. Manually update the chainId for devnet in `packages/nextjs/utils/scaffold-move/chains.ts`
 :::
