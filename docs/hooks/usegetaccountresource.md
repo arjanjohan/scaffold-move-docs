@@ -1,6 +1,4 @@
-# useGetAccountResource(s)
-
-## useGetAccountResource
+# useGetAccountResource
 
 Use this hook to fetch a specific resource for an address.
 
@@ -20,21 +18,3 @@ This example fetches a `bio` resource of the `onchain_bio` module for a predefin
 
 ## Return Value
 * `moveResource`: A [`MoveResource`](https://aptos.dev/en/network/blockchain/resources) object.
-
-## useGetAccountResources
-
-Use this hook to fetch the resources that are available for an address.
-
-``` tsx
-const { data: accountResources, isLoading: accountResourcesLoading } = useGetAccountResources(address);
-```
-
-This example fetches all resources that are on this address.
-
-## Parameters
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| address   | string | Address of the account. |
-
-## Return Value
-* `moveResources`: A list of [`MoveResource`](https://aptos.dev/en/network/blockchain/resources) objects.

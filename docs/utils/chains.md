@@ -2,7 +2,7 @@
 
 In `chains.ts` the different Aptos and Aptos-based chains are defined and exported as `defaultChains`.
 
-```
+``` ts
 export type Chain = {
   id: string;
   name: string;
@@ -13,11 +13,12 @@ export type Chain = {
   block_explorer?: string;
 };
 ```
-
-The default Aptos chains only need the mandatory fields, but for custom chains all fields should be provided for a fully functional dapp.
+The default Aptos chains only require the mandatory fields (id, name, and network). However, for custom chains, it's recommended to provide all fields to ensure a fully functional dapp.
 
 :::warning
-On Aptos devnet, the network is often wiped and the chainId can change. If this happens, redeploy the modules (this will always use the correct chainId) and manually update the chainId for devnet in `packages/nextjs/utils/scaffold-move/chains.ts`.
+The Aptos devnet is frequently reset, which can result in changes to the chainId. If this occurs, you should:
+1. Redeploy your modules (this process always uses the correct chainId)
+2. Manually update the chainId for devnet in `packages/nextjs/utils/scaffold-move/chains.ts`
 :::
 
 ## Parameters

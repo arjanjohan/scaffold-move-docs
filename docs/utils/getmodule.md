@@ -2,7 +2,7 @@
 
 Use this function to get a module by name and chainId.
 
-```
+``` tsx
 import { useTargetNetwork } from "~~/hooks/scaffold-move/useTargetNetwork";
 import { getModule } from "~~/utils/scaffold-move/modulesData";
 

@@ -2,10 +2,8 @@
 
 Use this function to call a View function on a Move Module.
 
-```
+``` tsx
 import { view } from "~~/utils/scaffold-move/view";
-
-[...]
 
 const viewResult = await view(
   {
