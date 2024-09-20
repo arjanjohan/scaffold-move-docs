@@ -1,3 +1,0 @@
-# 🧩 Components
-
-Coming soon...
