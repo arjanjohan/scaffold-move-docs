@@ -22,8 +22,7 @@ const viewResult = await view(
 
 This example calls the View function.
 
-### **Parameters**
-
+## Parameters
 | Parameter                     | Type      | Description                            |
 | ----------------------------- | --------- | -------------------------------------- |
 | **module\_address**           | string    | Address of the module                  |
@@ -32,6 +31,6 @@ This example calls the View function.
 | **ty\_args** (optional)       | string\[] | Type arguments                         |
 | **function\_args** (optional) | string\[] | Input  arguments for the view function |
 
-### **Return Value**
+## Return Value
 
 Returns an array of Move values

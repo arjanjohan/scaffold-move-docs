@@ -1,0 +1,9 @@
+{
+  "label": "🛠️ Utils",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "slug": "utils",
+    "description": "Scaffold Move has a set of utility functions to help you interact."
+  }
+}
