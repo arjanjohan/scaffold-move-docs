@@ -1,17 +1,14 @@
-# 👋 Intro
+# Scaffold Move Docs
 
-🧪 Scaffold Move is an open-source, cutting-edge toolkit for building decentralized applications (dApps) on Aptos or any other Move-based blockchain. It's designed to streamline the process of creating and deploying Move modules and building user interfaces that interact seamlessly with those modules.
+This website contains Scaffold Move Documentation and is built using [Docusaurus 2](https://docusaurus.io/).
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td>Quickstart</td><td></td><td><a href="intro/quickstart.md">quickstart.md</a></td></tr><tr><td></td><td>Links</td><td></td><td><a href="intro/links.md">links.md</a></td></tr></tbody></table>
+## Links
 
-⚙️ Built using Move, Aptos TS SDK, Next.js, Tailwind CSS, and TypeScript.
+- [Deployed Documentation](https://scaffold-move-docs.vercel.app/)
+- [Depoyed Scaffold Move instance](https://scaffold-move-chi.vercel.app/)
+- [Scaffold Move Github](https://github.com/arjanjohan/scaffold-move)
+- [Developer Telegram Community](https://t.me/+lOn2MJawQlc1YjA8)
 
-* 🛫 **Deployment Scripts**: Simplify and automate your deployment workflow.
-* ✅ **Module Hot Reload**: Your frontend automatically adapts to changes in your Move modules as you edit them.
-* 🪝 **Custom Hooks**: A collection of React hooks to simplify interactions with Move modules.
-* 🧱 **Components**: A library of common Web3 components to rapidly build your frontend.
-* 🔐 **Wallet Integration**: Connect to any Aptos-compatible wallet and interact with the Aptos network directly from your frontend.
+## Team
 
-Perfect for hackathons, prototyping, or launching your next Move project!
-
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>The Debug tab in Scaffold Move</p></figcaption></figure>
+- [arjanjohan](https://x.com/arjanjohan/)
