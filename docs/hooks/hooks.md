@@ -9,8 +9,8 @@ Scaffold Move provides a collection of custom React hooks designed to simplify i
 
 The custom hooks rely on three main files for their functionality:
 
-* `packages/nextjs/contracts/deployedModules.ts`
-* `packages/nextjs/contracts/externalModules.ts`
+* `packages/nextjs/modules/deployedModules.ts`
+* `packages/nextjs/modules/externalModules.ts`
 * `scaffold.config.ts`
 
-The `deployedModules.ts` file is auto-generated/updated whenever you run `yarn deploy --network`. It organizes contract addresses and abi's based on chainId.
+The `deployedModules.ts` file is auto-generated/updated whenever you run `yarn publish --network`. It organizes contract addresses and abi's based on chainId. 
