@@ -2,6 +2,7 @@
 
 Use this hook to fetch details about a deployed Move module, including the ABI and address. The information if fetched from the blockchain. 
 
+## Usage
 ``` tsx
 const { data: deployedModuleData, isLoading: deployedModuleLoading } = useDeployedModuleInfo("onchain_bio");
 

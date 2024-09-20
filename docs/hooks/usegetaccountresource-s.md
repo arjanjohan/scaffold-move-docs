@@ -4,6 +4,7 @@
 
 Use this hook to fetch a specific resource for an address.
 
+## Usage
 ``` tsx
 const { data: accountResource, isLoading: accountResourceoading } = useGetAccountResource(address, "onchain_bio", "bio");
 ```

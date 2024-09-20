@@ -2,7 +2,8 @@
 
 Use this hook to get an [Aptos client](https://aptos.dev/en/build/sdks/ts-sdk/quickstart) connected to the defined chain.
 
-```
+## Usage
+``` tsx
 const aptos = useAptosClient(chainId);
 ```
 

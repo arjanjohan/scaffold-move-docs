@@ -3,6 +3,7 @@
 
 Submit a transaction on a Move module.
 
+## Usage
 ``` tsx
 const { submitTransaction, transactionResponse, transactionInProcess } = useSubmitTransaction();
 

@@ -2,6 +2,7 @@
 
 Use this hook to fetch the MOVE balance for an address.
 
+## Usage
 ``` tsx
 const balance = useGetAccountNativeBalance(address);
 ```
