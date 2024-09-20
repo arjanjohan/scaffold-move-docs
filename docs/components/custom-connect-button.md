@@ -1,7 +1,3 @@
----
-sidebar_position: 7
----
-
 # CustomConnectButton
 
 Scaffold Move includes a custom Wallet Connect button with the following features:

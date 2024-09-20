@@ -3,7 +3,6 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "slug": "deploy",
-    "description": "TODO"
+    "description": "Explore the reusable components provided by Scaffold Move for building Aptos dApps efficiently."
   }
 }
