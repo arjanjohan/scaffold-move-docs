@@ -78,15 +78,13 @@ const config: Config = {
       title: '🏗 Scaffold Move Docs',
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          href: 'https://github.com/arjanjohan/scaffold-move',
+          label: 'GitHub Docs',
+          position: 'right',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://github.com/arjanjohan/scaffold-move-docs',
+          label: 'GitHub Scaffold Move',
           position: 'right',
         },
       ],
@@ -111,11 +109,11 @@ const config: Config = {
           title: 'Github',
           items: [
             {
-              label: 'Scaffold Move Github',
+              label: 'Scaffold Move',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Docs Github',
+              label: 'Docs',
               href: 'https://discordapp.com/invite/docusaurus',
             }
           ],

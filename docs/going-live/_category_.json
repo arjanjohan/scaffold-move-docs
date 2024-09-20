@@ -1,0 +1,9 @@
+{
+  "label": "🚀 Going Live",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "slug": "deploy",
+    "description": "How to publish your Move modules to the Aptos network and deploy your NextJSfrontend on Vercel."
+  }
+}
