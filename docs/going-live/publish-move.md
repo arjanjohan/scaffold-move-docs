@@ -23,5 +23,5 @@ This command publishes the Move modules, and afterwards updates the `deployedMod
 If you want to use external Move modules in your frontend, you can add their addresses in your Move.toml file to automatically generate an externalModules.ts file. [See here for more details](../external-modules/external-modules.md).
 
 :::warning
-For Aptos devnet, the network is often wiped and the chainId can change. If this happens, redeploy the modules (this will always use the correct chainId) and manually update the chainId for devnet in `packages/nextjs/utils/scaffold-move/chains.ts`.
+On Aptos devnet, the network is often wiped and the chainId can change. If this happens, redeploy the modules (this will always use the correct chainId) and manually update the chainId for devnet in `packages/nextjs/utils/scaffold-move/chains.ts`.
 :::

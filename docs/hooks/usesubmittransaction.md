@@ -3,7 +3,7 @@
 
 Submit a transaction on a Move module.
 
-```
+``` tsx
 const { submitTransaction, transactionResponse, transactionInProcess } = useSubmitTransaction();
 
 [...]
@@ -26,18 +26,18 @@ if (transactionResponse?.transactionSubmitted) {
 
 This example executes the `register` function on the ONCHAIN\_BIO Move module, with two string arguments.
 
-### **Parameters**
+## Parameters
 
 | Parameter   | Type                 | Description                                                   |
 | ----------- | -------------------- | ------------------------------------------------------------- |
 | transaction | InputTransactionData | Transaction data including the function and functionArguments |
 
-### **Return Value**
+## Return Value
 
 * `transactionInProcess`: A bool, indicating whether or not the transaction is in process.
 * `transactionResponse`: The response is either `TransactionResponseOnSubmission` or `TransactionResponseOnError`.
 
-```
+``` tsx
 export type TransactionResponseOnSubmission = {
   transactionSubmitted: true;
   transactionHash: string;

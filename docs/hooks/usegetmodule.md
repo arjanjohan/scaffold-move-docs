@@ -4,16 +4,14 @@
 
 Use this hook to fetch a Move module, including the bytecode and ABI. The information if fetched from the `deployedModules.ts` and `externalModules.ts`.
 
-```
+``` tsx
 const moveModule = useGetModule("onchain_bio");
 ```
 
-### **Parameters**
-
+## Parameters
 | Parameter  | Type   | Description        |
 | ---------- | ------ | ------------------ |
 | moduleName | string | Name of the module |
 
-### **Return Value**
-
+## Return Value
 * `module`: A GenericModule object, containing the bytecode and ABI.

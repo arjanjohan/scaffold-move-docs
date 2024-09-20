@@ -1,29 +1,22 @@
----
-hidden: true
-sidebar_class_name: hidden
----
-
 # useGetAccountModule(s)
 
 ## useGetAccountModule
 
 Use this hook to fetch the MOVE module that is published on an address by name.
 
-```
+``` tsx
 const { data: accountModule, isLoading: accountModuleLoading } = useGetAccountModule(address, moduleNam e);
 ```
 
 This example fetches all modules that are published on this address.
 
-### **Parameters**
-
+## Parameters
 | Parameter  | Type   | Description             |
 | ---------- | ------ | ----------------------- |
 | address    | string | Address of the account. |
 | moduleName | string | Name of the module      |
 
-### **Return Value**
-
+## Return Value
 * `moveModuleBytecode`: A `MoveModuleBytecode` object.
 
 ## useGetAccountModules
@@ -36,12 +29,10 @@ const { data: accountModules, isLoading: accountModulesLoading } = useGetAccount
 
 This example fetches all modules that are published on this address.
 
-### **Parameters**
-
+## Parameters
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | address   | string | Address of the account. |
 
-### **Return Value**
-
+## Return Value
 * `moveModuleBytecode[]`: A list of `MoveModuleBytecode` objects.
