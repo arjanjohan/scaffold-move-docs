@@ -1,8 +1,3 @@
----
-sidebar_position: 2
-slug: /links
----
-
 # 🔗 Links
 
 Below are some relevant links for developing with Scaffold Move or Move in general.
