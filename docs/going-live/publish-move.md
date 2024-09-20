@@ -1,6 +1,5 @@
 ---
-sidebar_position: 6
-slug: /deploy/move
+sidebar_position: 1
 ---
 
 # Publish Your Move Modules

@@ -1,6 +1,5 @@
 ---
-sidebar_position: 5 
-slug: /deploy/nextjs
+sidebar_position: 2 
 ---
 
 # Deploy Your NextJS Frontend
