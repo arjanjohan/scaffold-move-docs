@@ -17,15 +17,15 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  plugins: [
-    [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
-      {
-        indexBlog: false,
-        includeParentCategoriesInPageTitle: true,
-      },
-    ],
-  ],
+  // plugins: [
+  //   [
+  //     '@cmfcmf/docusaurus-search-local',
+  //     {
+  //       indexBlog: false,
+  //       includeParentCategoriesInPageTitle: true,
+  //     },
+  //   ],
+  // ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -41,7 +41,7 @@ const config: Config = {
       {
         
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: './sidebars.ts',
           routeBasePath: "/",
           // sidebarCollapsible: false,
           sidebarCollapsed: true,
