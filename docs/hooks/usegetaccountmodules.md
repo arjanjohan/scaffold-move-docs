@@ -10,9 +10,9 @@ const { data: accountModules, isLoading: accountModulesLoading } = useGetAccount
 This example fetches all modules that are published on this address.
 
 ## Parameters
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| address   | string | Address of the account. |
+| Parameter     | Type   | Description             |
+| ------------- | ------ | ----------------------- |
+| **address**   | string | Address of the account. |
 
 ## Return Value
 * `moveModuleBytecode[]`: A list of `MoveModuleBytecode` objects.

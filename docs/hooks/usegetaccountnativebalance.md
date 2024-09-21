@@ -12,7 +12,7 @@ This example retrieves Move balance of the address and stores the details in the
 ## Parameters
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| address   | string | Address of the account. |
+| **address** (optional) | string | Address of the account to query. Uses the connected account address if no address is given. |
 
 ## Parameters
 * `balance`: Object containing Move balance for this address.

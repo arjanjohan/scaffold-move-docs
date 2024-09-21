@@ -12,7 +12,7 @@ const moveModule = useGetModule("onchain_bio");
 ## Parameters
 | Parameter  | Type   | Description        |
 | ---------- | ------ | ------------------ |
-| moduleName | string | Name of the module |
+| **moduleName** | string | Name of the module |
 
 ## Return Value
 Returns an object of type `GenericModule`:

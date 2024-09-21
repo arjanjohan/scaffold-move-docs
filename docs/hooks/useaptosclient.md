@@ -12,7 +12,7 @@ This example uses the `useAptosClient` hook to retrieve the Aptos client for `ch
 ## Parameters
 | Parameter | Type   | Description                                                                                                   |
 | --------- | ------ | ------------------------------------------------------------------------------------------------------------- |
-| chainId   | string | The id for the chain as defined in [defaultChains](https://arjanjohan.gitbook.io/scaffold-move/utils/chains). |
+| **chainId**   | string | The id for the chain as defined in [defaultChains](https://arjanjohan.gitbook.io/scaffold-move/utils/chains). |
 
 ## Return Value
 

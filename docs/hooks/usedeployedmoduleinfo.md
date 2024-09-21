@@ -14,7 +14,7 @@ This example retrieves the details of the deployed module named `onchain_bio` an
 
 | Parameter  | Type   | Description        |
 | ---------- | ------ | ------------------ |
-| moduleName | string | Name of the module |
+| **moduleName** | string | Name of the module |
 
 ## Return Value
 * `data`: Object containing `address` and `abi` of module.

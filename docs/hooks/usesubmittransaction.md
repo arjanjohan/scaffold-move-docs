@@ -4,34 +4,26 @@
 Submit a transaction on a Move module.
 
 ## Usage
+
+Call this hook with the module name as argument. To send a transaction, use `submitTransaction` with the function name and function arguments as input.
+
 ``` tsx
-const { submitTransaction, transactionResponse, transactionInProcess } = useSubmitTransaction();
+import useSubmitTransaction from "~~/hooks/scaffold-move/useSubmitTransaction";
 
-[...]
+const { submitTransaction, transactionResponse, transactionInProcess } = useSubmitTransaction("onchain_bio");
 
-const functionName = "register";
-const transaction: InputTransactionData = {
-  data: {
-    function: `${ONCHAIN_BIO.address}::${ONCHAIN_BIO.name}::${functionName}`,
-    functionArguments: ["my name", "example text"],
-  },
-};
-await submitTransaction(transaction);
-if (transactionResponse?.transactionSubmitted) {
-  console.log("function_interacted", {
-    txn_status: transactionResponse.success ? "success" : "failed",
-  });
-}
+await submitTransaction("register", ["my name", "example text"]);
 
 ```
 
-This example executes the `register` function on the ONCHAIN\_BIO Move module, with two string arguments.
+This example executes the `register` function on the ONCHAIN_BIO Move module, with two string arguments.
 
 ## Parameters
 
-| Parameter   | Type                 | Description                                                   |
-| ----------- | -------------------- | ------------------------------------------------------------- |
-| transaction | InputTransactionData | Transaction data including the function and functionArguments |
+| Parameter           | Type    | Description                                                                     |
+| ------------------- | ------- | ------------------------------------------------------------------------------- |
+| functionName        | string  | Name of the function to call                                                    |
+| **args** (optional) | any[]   | Array of arguments to pass to the function. Empty when no arguments are needed. |
 
 ## Return Value
 

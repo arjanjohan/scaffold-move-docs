@@ -11,7 +11,7 @@ This example fetches all resources that are on this address.
 ## Parameters
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| address   | string | Address of the account. |
+| address (optional)   | string | Address of the account. Uses the connected account address if no address is given. |
 
 ## Return Value
 * `moveResources`: A list of [`MoveResource`](https://aptos.dev/en/network/blockchain/resources) objects.
