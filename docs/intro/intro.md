@@ -3,7 +3,7 @@ sidebar_position: 1
 slug: /
 ---
 
-# 👋 Intro
+# 👋 Welcome to Scaffold Move
 
 🧪 Scaffold Move is an open-source, cutting-edge toolkit for building decentralized applications (dApps) on Aptos or any other Move-based blockchain. It's designed to streamline the process of creating and deploying Move modules and building user interfaces that interact seamlessly with those modules.
 
