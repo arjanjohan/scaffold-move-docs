@@ -15,7 +15,8 @@ This example fetches a `bio` resource of the `onchain_bio` module for a predefin
 | ----------------------- | ------ | ------------------------------------------------- |
 | **moduleName**          | string | Name of the module where the resource is defined. |
 | **resourceName**        | string | Name of the Resource                              |
-| **address** (optional)  | string | Address of the account. Uses the connected account address if no address is given. |
+| **externalModuleAddress** (optional)  | string | If the module is not loaded in Scaffold Move (not deployed or imported as external module), this field is required to access the module's resource. |
+| **address** (optional)  | string | Address of the account which holds the resource. Uses the connected account address if no address is given. |
 | **options** (optional)  | object | Additional options for the query (e.g., retry settings) |
 
 ## Return Value
