@@ -4,10 +4,10 @@ Use this hook to fetch the Move module that is published on an address by name.
 
 ## Usage
 ``` tsx
-const { data: accountModule, isLoading: accountModuleLoading } = useGetAccountModule(address, moduleNam e);
+const { data: accountModule, isLoading: accountModuleLoading } = useGetAccountModule(address, moduleName);
 ```
 
-This example fetches all modules that are published on this address.
+This example fetches the module with this name that is published on this address.
 
 ## Parameters
 | Parameter      | Type   | Description             |
@@ -16,4 +16,4 @@ This example fetches all modules that are published on this address.
 | **moduleName** | string | Name of the module      |
 
 ## Return Value
-* `moveModuleBytecode`: A `MoveModuleBytecode` object.
+* A React Query result. `data` is a `MoveModuleBytecode` object.

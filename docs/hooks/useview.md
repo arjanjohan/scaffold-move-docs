@@ -41,3 +41,4 @@ This example executes the `get_bio` view function on the ONCHAIN_BIO Move module
 - If `watch` is set to `true`, it will continue to refetch data every 10 seconds.
 - You can manually refetch data by calling the `refetch` function returned by the hook.
 - If any of the `args` are `undefined`, the hook will not attempt to fetch data.
+- If the module is not deployed on the target network, `data` is cleared and `error` is set instead of throwing.

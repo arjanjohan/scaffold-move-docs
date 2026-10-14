@@ -16,11 +16,10 @@ This example uses the `getAllModules` function to get all modules deployed on th
 
 | Parameter        | Type   | Description                |
 | ---------------- | ------ | -------------------------- |
-| **module\_name** | string | Name of the module         |
-| **chainId**      | string | The id for a chain/network |
+| **chainId**      | number | The id for a chain/network |
 
 ## Return Value
-Returns a list of `GenericModule` objects:
+Returns an object that maps module names to `GenericModule` objects (empty if no modules are available for this chain):
 
 * `bytecode`: The raw bytecode of the module.
 * `abi`: An object that contains the following:

@@ -22,13 +22,17 @@ This example executes the `register` function on the ONCHAIN_BIO Move module, wi
 
 | Parameter           | Type    | Description                                                                     |
 | ------------------- | ------- | ------------------------------------------------------------------------------- |
-| functionName        | string  | Name of the function to call                                                    |
+| functionName        | string  | Name of the entry function to call                                              |
 | **args** (optional) | any[]   | Array of arguments to pass to the function. Empty when no arguments are needed. |
+| **tyArgs** (optional) | string[] | Array of type arguments for generic functions.                                |
+
+These are the parameters of the `submitTransaction` function that the hook returns.
 
 ## Return Value
 
 * `transactionInProcess`: A bool, indicating whether or not the transaction is in process.
-* `transactionResponse`: The response is either `TransactionResponseOnSubmission` or `TransactionResponseOnError`.
+* `transactionResponse`: `null` until a transaction was submitted, then either `TransactionResponseOnSubmission` or `TransactionResponseOnError`.
+* `clearTransactionResponse`: A function that resets `transactionResponse` to `null`.
 
 ``` tsx
 export type TransactionResponseOnSubmission = {
@@ -36,6 +40,7 @@ export type TransactionResponseOnSubmission = {
   transactionHash: string;
   success: boolean; // indicates if the transaction submitted but failed or not
   message?: string; // error message if the transaction failed
+  receipt: TransactionResponse; // the transaction as committed on chain, from the Aptos TypeScript SDK
 };
 
 export type TransactionResponseOnError = {

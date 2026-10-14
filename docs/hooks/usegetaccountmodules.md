@@ -1,6 +1,6 @@
 # useGetAccountModules
 
-Use this hook to fetch the Move modules that are publish on an address.
+Use this hook to fetch the Move modules that are published on an address.
 
 ## Usage
 ``` tsx
@@ -15,4 +15,4 @@ This example fetches all modules that are published on this address.
 | **address**   | string | Address of the account. |
 
 ## Return Value
-* `moveModuleBytecode[]`: A list of `MoveModuleBytecode` objects.
+* A React Query result. `data` is a list of `MoveModuleBytecode` objects.

@@ -1,6 +1,6 @@
 # Balance
 
-Displays the balance of a given address in the native token (APT). 
+Displays the balance of a given address in the native token of the target network (for example MOVE on Movement, APT on Aptos). The symbol comes from `native_token_symbol` in [`defaultChains`](../utils/chains.md), and falls back to APT. Shows a loading placeholder while fetching, and `Error` if the balance cannot be fetched.
 
 ## Screenshot
 ![Balance Example](../../static/img/balance.png)
@@ -19,4 +19,3 @@ const { account, connected } = useWallet();
 | Parameter                | Type     | Default Value | Description                                                                                                               |
 | ------------------------ | -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | **address**              | `string` | `undefined`   | Address in `0x___` format. |
-| **className** (optional) | `string` | `""`          | Prop to pass additional CSS styling to the component, where you can use Tailwind / daisyUI classes for styling. |

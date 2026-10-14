@@ -16,11 +16,11 @@ This example uses the `getModule` function to get the `onchain_bio` module deplo
 
 | Parameter           | Type   | Description                |
 | ------------------- | ------ | -------------------------- |
-| **module\_address** | string | Name of the module         |
-| **chainId**         | string | The id for a chain/network |
+| **moduleName**      | string | Name of the module         |
+| **chainId**         | number | The id for a chain/network |
 
 ## Return Value
-Returns an object of type `GenericModule`:
+Returns an object of type `GenericModule`, or `undefined` if the module is not available for this chain:
 
 * `bytecode`: The raw bytecode of the module.
 * `abi`: An object that contains the following:
