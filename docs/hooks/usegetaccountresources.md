@@ -16,4 +16,4 @@ This example fetches all resources that are on this address.
 
 
 ## Return Value
-* `moveResources`: An array of [`MoveResource`](https://aptos.dev/en/network/blockchain/resources) objects.
+* A React Query result. `data` is an array of [`MoveResource`](https://aptos.dev/en/network/blockchain/resources) objects.

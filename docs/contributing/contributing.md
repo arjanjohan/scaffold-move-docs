@@ -3,14 +3,11 @@ sidebar_position: 8
 ---
 # 🙏 Contributing to Scaffold Move
 
-Scaffold Move has successfully implemented core features essential for Move developers, providing a robust foundation for building decentralized applications. The current version offers a streamlined development experience with hot module reloading, custom hooks, and seamless wallet integration.
+Scaffold Move has successfully implemented core features essential for Move developers, providing a robust foundation for building decentralized applications. The current version offers a streamlined development experience with hot module reloading, custom hooks, seamless wallet integration, Move unit tests (`yarn test`) and deployment scripts for Aptos and Movement networks.
 
 ### New features planned:
 
-- Add a testing framework for Move modules.
-- Add custom networks to network switching. This is currently not available in the Aptos Wallet Adapter. Once [our PR](https://github.com/aptos-labs/aptos-wallet-adapter/pull/425) is merged, this feature will be added to Scaffold Move.
 - Enhance documentation and tutorials for easier onboarding.
-- Migrate documentation from Gitbook to Docusaurus.
 - Develop additional pre-built components for common dApp functionalities.
 - Integrate different templates/configurations (similar to [create-aptos-dapp](https://aptos.dev/en/build/create-aptos-dapp))
 

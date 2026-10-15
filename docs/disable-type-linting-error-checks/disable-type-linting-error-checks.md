@@ -30,6 +30,6 @@ If your repo is connected to Vercel, you can set `NEXT_PUBLIC_IGNORE_BUILD_ERROR
 
 ### Disabling GitHub Workflow <a href="#disabling-github-workflow" id="disabling-github-workflow"></a>
 
-We have a GitHub workflow setup checkout `.github/workflows/lint.yaml` which runs type and lint error checks every time code is **pushed** to `main` branch or **pull request** is made to `main` branch.
+We have a GitHub workflow setup, checkout `.github/workflows/ci.yml`, which runs on every **pull request** and every **push** to the `master` branch. It runs the type, lint and build checks for the NextJS app and type checks the Move scripts. It also compiles and tests the Move package for Movement and Aptos.
 
-To disable it, **delete `.github` directory**.
+To disable it, **delete the `.github/workflows/ci.yml` file** (or the whole `.github` directory).
