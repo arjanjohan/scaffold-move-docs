@@ -24,6 +24,8 @@ The Aptos networks only need `network` next to the mandatory fields, because the
 
 The default chains are `movement_testnet`, `movement_mainnet`, `aptos_mainnet`, `aptos_testnet` and `local`. Use these keys with the `--network` option of `yarn account`, `yarn deploy`, `yarn compile` and `yarn test`. The `defaultNetwork` in `packages/move/move.config.ts` is used when no `--network` is given.
 
+The `local` chain is the node that `yarn chain` runs: the API is served on `http://127.0.0.1:8080/v1` and its faucet on `http://127.0.0.1:8081`. It is not part of the app's `targetNetworks` by default; see the [local network](../quickstart/quickstart.md#local-network) steps.
+
 :::warning
 Networks that are reset regularly, such as the Aptos devnet, can change their chain id. If this occurs, update the `id` of the chain in `packages/common/chains.ts` and redeploy your modules.
 :::
@@ -39,8 +41,8 @@ Networks that are reset regularly, such as the Aptos devnet, can change their ch
 | **cli**                                | string  | CLI the Move scripts use for this chain: `aptos` or `movement`. Its accounts live in `packages/move/.<cli>/config.yaml`.          |
 | **override\_std** (optional)           | string  | Aptos framework branch to compile against with `--override-std`. Without it, the framework in `Move.toml` is used.                |
 | **indexer** (optional)                 | string  | URL for the indexer.                                                                                                              |
-| **faucet\_api** (optional)             | string  | URL of the faucet API, used to fund new accounts.                                                                                 |
-| **faucet\_url** (optional)             | string  | URL of the faucet page, linked in the UI.                                                                                         |
+| **faucet\_api** (optional)             | string  | URL of the faucet API, used to fund new accounts (`yarn account`, `yarn faucet`) and by the "Faucet" option of the wallet dropdown. |
+| **faucet\_url** (optional)             | string  | URL of the faucet page, linked in the UI and printed by `yarn deploy` when the account has no funds and there is no faucet API.   |
 | **block\_explorer** (optional)         | string  | URL for the block explorer.                                                                                                       |
 | **explorer\_network\_param** (optional)| string  | Value of the `network` query parameter added to block explorer links.                                                             |
 | **native\_token\_symbol** (optional)   | string  | Symbol of the native token. Shown by the Balance component, defaults to `APT`.                                         |

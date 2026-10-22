@@ -17,6 +17,8 @@ To publish your Move modules to the account of that network, use this command:
 yarn deploy --network <network>
 ```
 
+Before publishing, the command checks the balance of the network's account. If it has no funds, the command stops and tells you how to fund it: with `yarn faucet <address> --network <network>` when the network has a faucet API, or with the faucet page otherwise (e.g. Aptos testnet).
+
 This command publishes the Move modules with the CLI of the network, deploying the addresses set to `'_'` in `Move.toml` to the network's account. It then updates the `deployedModules.ts` file in the NextJS directory.
 
 If you want to use external Move modules in your frontend, you can add their addresses in your Move.toml file. This will automatically generate an `externalModules.ts` file. For more details, [refer to the external modules documentation](../external-modules/external-modules.md).

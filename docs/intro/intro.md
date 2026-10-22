@@ -13,7 +13,7 @@ slug: /
 * ✅ **Module Hot Reload**: Your frontend automatically adapts to changes in your Move modules as you edit them.
 * 🪝 **Custom Hooks**: A collection of React hooks to simplify interactions with Move modules.
 * 🧱 **Components**: A library of common Web3 components to rapidly build your frontend.
-* 🔐 **Wallet Integration**: Connect to any Aptos-compatible wallet and interact with the Aptos network directly from your frontend.
+* 🔐 **Wallet Integration**: Connect a Movement or Aptos wallet and interact with the network directly from your frontend.
 
 Perfect for hackathons, prototyping, or launching your next Move project!
 
