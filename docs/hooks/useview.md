@@ -40,5 +40,8 @@ This example executes the `get_bio` view function on the ONCHAIN_BIO Move module
 - The hook will automatically fetch data when mounted and when any of its parameters change.
 - If `watch` is set to `true`, it will continue to refetch data every 10 seconds.
 - You can manually refetch data by calling the `refetch` function returned by the hook.
-- If any of the `args` are `undefined`, the hook will not attempt to fetch data.
+- If any of the `args` are `undefined` (for example, no account is connected yet), the hook will not attempt to fetch data. `data` and `error` are reset to `null` and `isLoading` is `false`.
 - If the module is not deployed on the target network, `data` is cleared and `error` is set instead of throwing.
+- If a call fails, `data` is cleared and `error` is set, so the result of earlier arguments (for example, another account's) is not shown.
+- Only the latest request updates the state. When the arguments change while a call is in flight (for example, after switching accounts), the result of the older call is ignored.
+- Failed calls are not logged to the console; use `error` to handle them.
