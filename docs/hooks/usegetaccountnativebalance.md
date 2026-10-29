@@ -19,3 +19,5 @@ This example retrieves the native token balance of the address.
 * `loading`: `true` while the balance is being fetched.
 * `error`: `true` if fetching the balance failed.
 * `nativeTokenSymbol`: The `native_token_symbol` of the target network, or `"APT"` if the network does not define one.
+
+The balance is cached and refetched every 30 seconds. It is also refreshed right after a transaction submitted with [`useSubmitTransaction`](./usesubmittransaction.md) is committed on chain, including when the transaction fails, because gas is paid either way. Components that use this hook, such as `Balance` and the [`CustomConnectButton`](../components/custom-connect-button.md), update without waiting for the next poll.

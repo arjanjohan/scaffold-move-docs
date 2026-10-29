@@ -34,6 +34,8 @@ These are the parameters of the `submitTransaction` function that the hook retur
 * `transactionResponse`: `null` until a transaction was submitted, then either `TransactionResponseOnSubmission` or `TransactionResponseOnError`.
 * `clearTransactionResponse`: A function that resets `transactionResponse` to `null`.
 
+Once a transaction is committed on chain (`transactionSubmitted: true`, whether `success` is `true` or `false`), the hook refreshes the native token balance used by [`useGetAccountNativeBalance`](./usegetaccountnativebalance.md), so displayed balances reflect the gas spent.
+
 ``` tsx
 export type TransactionResponseOnSubmission = {
   transactionSubmitted: true;
