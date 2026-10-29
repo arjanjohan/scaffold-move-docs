@@ -4,12 +4,12 @@ sidebar_position: 1
 
 # Address
 
-Display an address with a copy-to-clipboard icon and a visual blockie representation. The component offers the following features:
+Display an address with a copy-to-clipboard button and a visual blockie representation. The component offers the following features:
 
 - Shows a shortened or full address format
 - Provides a clickable link to the block explorer (can be disabled)
 - Displays a blockie image unique to the address
-- Includes a copy icon for easy address copying
+- Includes a copy button for easy address copying. It is a real `<button>` with an accessible label ("Copy address", then "Address copied" briefly after copying), so it works with keyboard and screen readers
 
 When clicked, the address links to:
 1. The block explorer of the connected wallet's network (if a wallet is connected)
